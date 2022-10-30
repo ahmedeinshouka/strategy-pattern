@@ -2,21 +2,22 @@
 strategy pattern application
 package refactoring_guru.strategy.example;
 
-import refactoring_guru.strategy.example.order.Order;
-import refactoring_guru.strategy.example.strategies.PayByCreditCard;
-import refactoring_guru.strategy.example.strategies.PayByPayPal;
-import refactoring_guru.strategy.example.strategies.PayStrategy;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
 
-/**
- * World first console e-commerce application.
- */
-public class Demo {
+
+
+
+
+    import refactoring_guru.strategy.example.order.Order;
+    import refactoring_guru.strategy.example.strategies.PayByCreditCard;
+    import refactoring_guru.strategy.example.strategies.PayByPayPal;
+    import refactoring_guru.strategy.example.strategies.PayStrategy;
+    import java.io.BufferedReader;
+    import java.io.IOException;
+    import java.io.InputStreamReader;
+    import java.util.HashMap;
+    import java.util.Map;
+    public class Demo {
     private static Map<Integer, Integer> priceOnProducts = new HashMap<>();
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     private static Order order = new Order();
